@@ -1,0 +1,165 @@
+/* Nav Bar */
+.button {
+    box-shadow: 1 cm;
+    border: none;
+    border-radius: 2px;
+
+    background-color: rgb(133, 178, 152);
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    font-kerning: normal;
+    color: white;
+}
+
+
+.button:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+.top-bar {
+    overflow: hidden;
+    background-color: rgb(133, 178, 152);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.top-bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Page Titles */
+.page-title {
+    margin-top: 2cm;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(110, 156, 129);
+    font-size: 300%;
+}
+
+.page-subtitle {
+    margin-top: 0cm;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(200, 200, 200);
+    font-size: 100%;
+}
+
+/* Home */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/* Profiles */
+
+.card > img {
+    width: 200px;
+    border-radius: 5%;
+}
+
+.profgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(200px + 3cm), 1fr));
+    place-items: center;
+    grid-gap: auto;
+}
+
+.profgrid > div{
+    background: rgb(235, 235, 235);
+    text-align: center;
+}
+
+.card {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    border-radius: 5%;
+    width: calc(200px + 2cm);
+    height: calc(200px + 2cm + 2cm);
+    margin: 0.75cm;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    text-align: center;
+}
+
+.name {
+    margin: 0;
+    margin-top: 0.5cm;
+}
+
+.title {
+    margin-top: 1px;
+    color: grey;
+    font-size: 15px;
+}
+
+#proftext {
+    margin-top: 0.5cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+}
+
+/* Quotes */
+
+.number-box{
+    background-color: rgb(214, 230, 243);
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    margin: 2cm;
+}
+
+.number-text{
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+    color: rgb(214, 230, 243);
+ }
+
+ .number-box{
+    background-color: rgb(214, 230, 243);
+    padding-top: .25cm;
+    padding-bottom: .5cm;
+    margin: 2cm;
+}
+
+.number-box:hover{
+    background-color: rgb(126, 158, 239);
+    cursor: none;
+}
+
+/* Adventure Time */
+
+.advgrid {
+    line-height:0;
+    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:5;
+    column-gap:5px;
+ }
+
+ .advgrid > img {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin-bottom:5px; /* to match column gap */
+ }
+
+ .advhead {
+    margin-bottom: 0.25cm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0.5cm;
+    font-size: 200%;
+    color: rgb(166, 209, 184);
+ }
